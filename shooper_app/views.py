@@ -677,4 +677,13 @@ step : 8 git branch -M main
 
 step : 9 git push -u origin main
 
+
+project change to push code to github step
+
+
+step : 1   git status
+
+step : 2   git add -A
+
+
 """    
