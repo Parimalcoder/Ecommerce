@@ -685,5 +685,8 @@ step : 1   git status
 
 step : 2   git add -A
 
+step : 3   git commit -m "yore massage"
+
+step : 4   git push -u origin main
 
 """    
