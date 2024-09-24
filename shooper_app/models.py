@@ -19,8 +19,8 @@ class User(models.Model):
     email=models.EmailField(max_length=50)
     password=models.CharField(max_length=50)
     time=models.DateTimeField(editable=True, auto_now_add=True)
-    otp=models.IntegerField(max_length=4, blank=True,null=True)
-    img1=models.ImageField(upload_to="image",default=r"C:\Users\Dell\Desktop\shopper_env\shopper_project\shooper_app\static\img\avatar6.png")
+    otp=models.IntegerField()
+    img1=models.ImageField(upload_to="image",default=r"C:\Users\Parimal\OneDrive\Documents\Live Project\shopper_env\shopper_project\shooper_app\static\img\avatar6.png")
     phone=models.IntegerField(blank=True,null=True)
     address1=models.CharField(max_length=50,blank=True,null=True)
     
@@ -76,7 +76,7 @@ class product(models.Model):
     img2=models.ImageField(upload_to="image",blank=True,null=True)
     img3=models.ImageField(upload_to="image",blank=True,null=True)
     price_filter=models.ForeignKey(price_filter,on_delete=models.CASCADE,blank=True,null=True)
-    size_filter=models.ManyToManyField(size_filter,blank=True,null=True)
+    size_filter=models.ManyToManyField(size_filter,blank=True)
     sub_category=models.ForeignKey(sub_category,related_name="count",on_delete=models.CASCADE,blank=True,null=True)
     color=models.CharField(choices=ch,blank=True,null=True,max_length=50)
     def __str__(self):

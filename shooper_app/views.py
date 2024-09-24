@@ -656,37 +656,5 @@ def review_view(request):
 
 
 
-""""
-set up to code in github
-
-step : 1 git init
-
-step : 2 create file to project : file name(.gitignore)
-
-step : 3 open link : https://www.toptal.com/developers/gitignore/
-
-step : 4 search to django and all code copy and paste to .gitignore file
-
-step : 5 git add -A
-
-step : 6 git commit -m "yore massage"
-
-step : 7 add this rapository link : EX : git remote add origin https://github.com/NRjadav/e-shopper.git
-
-step : 8 git branch -M main
-
-step : 9 git push -u origin main
 
 
-project change to push code to github step
-
-
-step : 1   git status
-
-step : 2   git add -A
-
-step : 3   git commit -m "yore massage"
-
-step : 4   git push -u origin main
-
-"""    
